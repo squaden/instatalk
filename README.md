@@ -1,24 +1,19 @@
-# README
+## Instatalk
+Приложение - чат, с возможностью создавать комнаты и общаться в режиме реального времени.
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Пример на [heroku](https://instatalksq.herokuapp.com)
 
-Things you may want to cover:
+### Требования
+* Версия Ruby 2.5.1 и выше
+* Версия Rails 5.1.4
+* Установленный gem Bundler
 
-* Ruby version
+### Установка
+Выполните в терминале или командной строке последовательно следующие команды:
+* `git clone git@github.com:squaden/instatalk`
+* `bundle install`
+* `bundle exec rails db:migrate`
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+### Использование
+* Для старта сервера на локальной машине в терминале или командной строке выполните команду `rails s`
+* Откройте веб-браузер и перейдите по адресу: `http://localhost:3000`
