@@ -17,8 +17,19 @@
           Welcome to Instatalk, <b><%= current_user.nickname %></b>!
         </div>
       </div>
-
+      <div class="row">
+        <div class="col-md-8">
       <%= yield %>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <div class="card-header font-weight-bold">Сейчас на сайте:</div>
+            <div class="card-body text-success bg-light" id="users-online">
+              <%= render partial: 'users/user', collection: @users %>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </div>
